@@ -1,0 +1,50 @@
+body {
+    background-color: orange;
+    padding: 20pt;
+}
+#wide {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    /* flex-direction: column; */
+
+}
+h1{display: inline-block;
+    margin-left: 20px;}
+    ul{border-top: 1px solid black;}
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.container {
+    text-align: center;
+    border: 1px solid black;
+    width: 800px;
+    margin:center;
+}
+
+h3{text-align: center;
+    border-top: 1px solid black;}
+
+    .slogan {text-align: left;
+}
+
+img{width: 110px;
+    height: 100px;
+}
+.imfor{border-bottom: 1px solid black;}
+.Symbol{display: flex;
+    text-align: left;
+    margin-left: 70px;
+}
+.amg{
+flex-direction:column;}
+
+.sy{margin-left: 100px;
+width: 50px;
+height: 35px;}
+
+.ef{border-bottom: 1px solid black;}
