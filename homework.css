@@ -1,0 +1,52 @@
+h1{display: inline-block;
+    margin-left: 20px;}
+    ul{border-top: 1px solid black;}
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+.container {
+    text-align: center;
+    border: 1px solid black;
+    width: 800px;
+    margin:center;
+    
+    
+}
+h3{text-align: left;
+    border-top: 1px solid black;}
+    .slogan {text-align: left;
+}
+img{width: 400px;
+    height: 300px;
+    }
+
+.first-TouristSpot{
+
+}
+
+.first-TouristSpot.text1{
+
+
+}
+
+.first-TouristSpot.text1.exp{
+    float: right;
+
+}
+
+
+.first-TouristSpot.text1.image{
+    float: left;
+
+}
+
+ *{
+    margin: 0;
+     padding:0;
+
+     }
+.div{
+    text-align: center;
+}
