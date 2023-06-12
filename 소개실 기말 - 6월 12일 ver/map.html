@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>추천 여행지 지도</title>
+</head>
+<style>
+	button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 10px 20px;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 8px;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:hover {
+		color: blue
+	}
+
+	button:hover {
+		color: blue;
+	}
+
+	a:hover {
+		color: orange;
+	}
+
+	button:hover {
+		color: orange;
+	}
+</style>
+
+<body>
+	<button id="btn1">소매물도 등대섬</button>
+	<button id="btn2">통영 케이블카</button>
+	<button id="btn3">동피랑</button>
+	<button id="btn4">통영시청</button>
+	<button><a href="/homePage.html">돌아가기</a></button>
+	<div id="map" style="width: 100%; height: 1000px;;"></div>
+
+
+
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8de0f64019799c8cc3083c6028ec1698"></script>
+	<script>
+		let i = 34.854359, j = 128.433117;
+
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+			mapOption = {
+				center: new kakao.maps.LatLng(i, j), // 지도의 중심좌표
+				level: 4 // 지도의 확대 레벨
+			};
+
+		// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+		const map = new kakao.maps.Map(mapContainer, mapOption);
+		const markerPosition = new kakao.maps.LatLng(i, j);
+		const marker = new kakao.maps.Marker({
+			position: markerPosition
+		});
+		marker.setMap(map);
+
+		btn1.onclick = function () {
+			i = 34.621989;
+			j = 128.548690;
+			map.setCenter(new kakao.maps.LatLng(i, j));
+			marker.setPosition(new kakao.maps.LatLng(i, j));
+		}
+		btn2.onclick = function () {
+			i = 34.826642;
+			j = 128.425171;
+			map.setCenter(new kakao.maps.LatLng(i, j));
+			marker.setPosition(new kakao.maps.LatLng(i, j));
+		}
+		btn3.onclick = function () {
+			i = 34.8453226;
+			j = 128.4275690;
+			map.setCenter(new kakao.maps.LatLng(i, j));
+			marker.setPosition(new kakao.maps.LatLng(i, j));
+		}
+		btn4.onclick = function () {
+			i = 34.854359;
+			j = 128.433117;
+			map.setCenter(new kakao.maps.LatLng(i, j));
+			marker.setPosition(new kakao.maps.LatLng(i, j));
+
+		}
+	</script>
+</body>
+
+</html>
